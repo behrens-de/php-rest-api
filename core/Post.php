@@ -21,12 +21,12 @@ class Post{
 
     public function data(){
         // Create Query 
-        $query = 'SELECT * FROM  '.$this->table;
+        $query = 'SELECT firstname, lastname, email FROM '.$this->table.' ORDER BY firstname ASC';
 
         // Prepare Statement
         $statement = $this->dbcon->prepare($query);
         // Execute Query
-        $statement->execute($query);
+        $statement->execute();
 
         return $statement;
     }
