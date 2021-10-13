@@ -1,0 +1,3 @@
+<?
+
+echo __DIR__.DIRECTORY_SEPARATOR;
